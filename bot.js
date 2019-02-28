@@ -15,7 +15,7 @@ client.on('message', message => {
 client.login(process.env.BOT_TOKEN);
 
 // status
-user.setStatus('dnd')
+client.user.setStatus('dnd')
 
 // game and streaming
-user.setPresence({ game: { name: 'Surveilling', type: 0 } });
+client.user.setPresence({ game: { name: 'Surveilling', type: 0 } });
