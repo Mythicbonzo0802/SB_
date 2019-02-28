@@ -18,4 +18,4 @@ client.login(process.env.BOT_TOKEN);
 bot.user.setStatus('dnd')
 
 // game and streaming
-bot.user.setGame('Surveilling')
+bot.user.setPresence({ game: { name: 'Surveilling', type: 0 } });
