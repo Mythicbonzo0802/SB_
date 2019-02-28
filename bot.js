@@ -13,3 +13,9 @@ client.on('message', message => {
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
+
+// status
+bot.user.setStatus('dnd')
+
+// game and streaming
+bot.user.setGame('Surveilling')
