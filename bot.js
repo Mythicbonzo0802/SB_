@@ -18,4 +18,16 @@ client.login(process.env.BOT_TOKEN);
 client.user.setStatus('dnd')
 
 // game and streaming
-client.user.setPresence({ game: { name: 'Surveilling', type: 0 } });
+static void UpdatePresence()
+{
+    DiscordRichPresence discordPresence;
+    memset(&discordPresence, 0, sizeof(discordPresence));
+    discordPresence.state = "Surveilling";
+    discordPresence.details = "https://planetzeu.net/";
+    discordPresence.largeImageKey = "web";
+    discordPresence.largeImageText = "Planet Z EU";
+    discordPresence.smallImageKey = "ppb";
+    discordPresence.partyId = "nahh";
+    discordPresence.joinSecret = "nah";
+    Discord_UpdatePresence(&discordPresence);
+}
