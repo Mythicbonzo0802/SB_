@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     console.log('I am ready!');
-    user.setGame('surveilling')
+    setGame('surveilling')
 });
 
 client.on('message', message => {
