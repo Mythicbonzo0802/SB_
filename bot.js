@@ -11,6 +11,12 @@ client.on('message', message => {
     	message.reply('pong');
   	}
 });
+
+// status
+bot.user.setStatus('Online') // 'Online', 'idle', 'invisible' & 'dnd'
+
+// Spil & Stream status
+bot.user.setGame('Suveilling the halls') // For stream: bot.user.setGame('Titel', 'twitch.tv/mythicbonzo0802') 
     
 client.on('message', message => {
     if (message.content === 'nigger') {
