@@ -13,10 +13,10 @@ client.on('message', message => {
 });
 
 // status
-client.bot.setStatus('Online') // 'Online', 'idle', 'invisible' & 'dnd'
+client.user.setStatus('Online') // 'Online', 'idle', 'invisible' & 'dnd'
 
 // Spil & Stream status
-client.bot.setGame('Suveilling the halls') // For stream: bot.user.setGame('Titel', 'twitch.tv/mythicbonzo0802') 
+client.user.setGame('Suveilling the halls') // For stream: bot.user.setGame('Titel', 'twitch.tv/mythicbonzo0802') 
     
 client.on('message', message => {
     if (message.content === 'nigger') {
