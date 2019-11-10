@@ -16,7 +16,7 @@ client.on('message', message => {
 client.user.setStatus('Online') // 'Online', 'idle', 'invisible' & 'dnd'
 
 // Spil & Stream status
-client.user.setGame('Suveilling the halls') // For stream: bot.user.setGame('Titel', 'twitch.tv/mythicbonzo0802') 
+client.user.setGame('Surveilling the halls') // For stream: bot.user.setGame('Titel', 'twitch.tv/mythicbonzo0802') 
     
 client.on('message', message => {
     if (message.content === 'nigger') {
